@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context="com.profdanilo.activity.MainActivity">
+
+    <Button
+        android:id="@+id/c_key"
+        style="@style/KeyStyle"
+        android:layout_width="50dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/red"
+        android:onClick="playC"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/d_key"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/d_key"
+        style="@style/KeyStyle"
+        android:layout_width="50dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/orange"
+        android:onClick="playD"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="87dp" />
+
+    <Button
+        android:id="@+id/e_key"
+        style="@style/KeyStyle"
+        android:layout_width="50dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/yellow"
+        android:onClick="playE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/d_key"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/f_key"
+        style="@style/KeyStyle"
+        android:layout_width="50dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/green"
+        android:onClick="playF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/e_key"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/g_key"
+        style="@style/KeyStyle"
+        android:layout_width="50dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/turquoise"
+        android:onClick="playG"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintStart_toEndOf="@+id/f_key"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/a_key"
+        style="@style/KeyStyle"
+        android:layout_width="50dp"
+        android:layout_height="47dp"
+        android:background="@color/blue"
+        android:onClick="playA"
+        tools:layout_editor_absoluteX="542dp"
+        tools:layout_editor_absoluteY="313dp" />
+
+    <Button
+        android:id="@+id/b_key"
+        style="@style/KeyStyle"
+        android:layout_width="50dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/purple"
+        android:onClick="playB"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/g_key"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="0dp"
+        android:layout_height="18dp"
+        android:text="FranciscoAlysson"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
